@@ -1,0 +1,9 @@
+const MOTIVATION_CATEGORY = 'motivation'
+const FUN_CATEGORY = 'fun'
+
+const ALL_CATEGORIES = [MOTIVATION_CATEGORY, FUN_CATEGORY]
+module.exports = {
+    MOTIVATION_CATEGORY,
+    FUN_CATEGORY,
+    ALL_CATEGORIES,
+}

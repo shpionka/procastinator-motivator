@@ -1,0 +1,20 @@
+@import "foundation";
+
+.quote-container {
+  .quote-text {
+    color: #000;
+
+    @include breakpoint(medium) {
+      font-size: 36px;
+    }
+
+    // Only affects medium screens, not small or large
+    @include breakpoint(medium down) {
+      font-size: 28px;
+    }
+
+    .quote-text-author {
+      font-weight: bold;
+    }
+  }
+}

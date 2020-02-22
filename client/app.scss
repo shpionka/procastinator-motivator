@@ -1,0 +1,50 @@
+@import 'foundation';
+
+@include foundation-everything;
+
+h1, h2, h3, h4, h5, a, span, p, div {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  height: 100%;
+}
+
+.top-content {
+  height: 30%;
+  min-height: 200px;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 70%;
+
+  .card-content-loading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-content-error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-container {
+    @include breakpoint(large) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    // Only affects medium screens, not small or large
+    @include breakpoint(large down) {
+      margin: 10%;
+    }
+  }
+}

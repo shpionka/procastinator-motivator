@@ -1,0 +1,22 @@
+{
+  "name": "procastinator-motivator-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:start": "NODE_ENV=DEV string> node ./server.js",
+    "db:start": "mongod --dbpath /tmp",
+    "dev:content": "export NODE_ENV=PROD; export DB_CONNECTION_STRING=<>; node ./scripts/migrator.js",
+    "serverless:deploy": "./node_modules/.bin/serverless deploy"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "serverless": "^1.64.0",
+    "serverless-http": "^2.3.1"
+  },
+  "devDependencies": {}
+}
